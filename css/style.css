@@ -1,0 +1,387 @@
+body {
+  font-family: 'TorusPro-SemiBold';
+  scroll-behavior: smooth;
+}
+::selection {
+  background: #A80B44;
+}
+.hydrated {
+  background-color: #1a1a1a;
+}
+
+@font-face {
+  font-family: 'TorusPro-SemiBold';
+  src: url('/fonts/TorusPro-SemiBold.ttf');
+}
+
+.active {
+  color: #A80B44;
+}
+.col-sm-4, col-md-3, .item {
+  padding: 10px;
+}
+
+.footer-clean {
+  padding:50px 0;
+  color:#f8f9fa;
+}
+
+.footer-clean h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer-clean ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.footer-clean ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-clean ul a:hover {
+  opacity:1;
+}
+
+.footer-clean .item.social {
+  text-align:right;
+}
+
+.footer-clean .item.social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  margin-left:10px;
+  margin-top:22px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-clean .item.social > a:hover {
+  opacity:0.9;
+}
+
+.footer-clean .copyright {
+  margin-top:14px;
+  margin-bottom:0;
+  font-size:13px;
+  opacity:0.6;
+}
+hr {
+  border: 1px solid aqua;
+  margin: 1rem;
+  opacity: .25;
+}
+.card {
+  background-color: #2b2d30;
+  color: #fff;
+  margin-left: 9px;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	color: #ffffff;
+}
+
+::-webkit-scrollbar-track {
+	background: #212529;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #A80B44;
+	border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #bd0f4f;
+}
+
+::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: rgb(219, 219, 219);
+	opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: rgb(219, 219, 219);
+}
+
+::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: rgb(219, 219, 219);
+}
+
+.main-text {
+  padding: 200px 0;
+  
+}
+
+
+.mrcyo {
+  font-size: 250px;
+  text-shadow: 0 0 5px #750c33, 0 0 10px #750c33, 0 0 15px #750c33, 0 0 20px #A80B44,
+    0 0 35px #A80B44, 0 0 40px #A80B44;
+    animation-name: mrcglow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes mrcglow {
+  from {
+    text-shadow: 0px 0px 5px #751136, 0px 0px 5px #A80B44;
+  }
+  to {
+    text-shadow: 0px 0px 20px #751136, 0px 0px 20px #A80B44;
+  }
+}
+
+
+.bubbly-button {
+  display: inline-block;
+  font-size: 1em;
+  padding: 1em 2em;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #A80B44;
+  color: #fff;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+}
+.bubbly-button:focus {
+  outline: 0;
+}
+.bubbly-button:before, .bubbly-button:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 140%;
+  height: 100%;
+  left: -20%;
+  z-index: -1000;
+  transition: all ease-in-out 0.5s;
+  background-repeat: no-repeat;
+}
+.bubbly-button:before {
+  display: none;
+  top: -75%;
+  background-image: radial-gradient(circle, #A80B44 20%, transparent 20%), radial-gradient(circle, transparent 20%, #A80B44 20%, transparent 30%), radial-gradient(circle, #A80B44 20%, transparent 20%), radial-gradient(circle, #A80B44 20%, transparent 20%), radial-gradient(circle, transparent 10%, #A80B44 15%, transparent 20%), radial-gradient(circle, #A80B44 20%, transparent 20%), radial-gradient(circle, #A80B44 20%, transparent 20%), radial-gradient(circle, #A80B44 20%, transparent 20%), radial-gradient(circle, #A80B44 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+}
+.bubbly-button:after {
+  display: none;
+  bottom: -75%;
+  background-image: radial-gradient(circle, #A80B44 20%, transparent 20%), radial-gradient(circle, #A80B44 20%, transparent 20%), radial-gradient(circle, transparent 10%, #A80B44 15%, transparent 20%), radial-gradient(circle, #A80B44 20%, transparent 20%), radial-gradient(circle, #A80B44 20%, transparent 20%), radial-gradient(circle, #A80B44 20%, transparent 20%), radial-gradient(circle, #A80B44 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+.bubbly-button:active {
+  transform: scale(0.9);
+  background-color: #A80B44;
+  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+}
+.bubbly-button.animate:before {
+  display: block;
+  animation: topBubbles ease-in-out 0.75s forwards;
+}
+.bubbly-button.animate:after {
+  display: block;
+  animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+
+@keyframes topBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+  }
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+@keyframes bottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+
+.animated-main p {
+  font-size: 2.25rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.animated-main p span.typed-text {
+  font-weight: normal;
+  color: #A80B44;
+}
+.animated-main p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.animated-main p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+
+
+.about-text {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  border-radius: 50%;
+}
+
+
+
+@keyframes mrcglow {
+ 0%,
+ 20%,
+ 50%,
+ 80%,
+ to {
+  transform: translateZ(-2px) translateY(5px);
+ }
+
+ 40% {
+  transform: rotateY(180deg) translateZ(-2px) translateY(-35px);
+ }
+
+ 60% {
+  transform: translateZ(-2px) translateY(-25px);
+ }
+}
+
+@-moz-keyframes mrcglow {
+  70% {
+    opacity: 0.7;
+  }
+}
+@-webkit-keyframes mrcglow {
+  45% {
+    opacity: 0.5;
+  }
+}
+@-o-keyframes mrcglow {
+  70% {
+    opacity: 0.7;
+  }
+}
+@keyframes mrcglow {
+  70% {
+    opacity: 0.7;
+  }
+}
+@-moz-keyframes mrcglow {
+  40% {
+    opacity: 0.8;
+  }
+  42% {
+    opacity: 0.1;
+  }
+  43% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  46% {
+    opacity: 0.8;
+  }
+}
+@-webkit-keyframes mrcglow {
+  40% {
+    opacity: 0.8;
+  }
+  42% {
+    opacity: 0.1;
+  }
+  43% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  46% {
+    opacity: 0.8;
+  }
+}
+@-o-keyframes mrcglow {
+  40% {
+    opacity: 0.8;
+  }
+  42% {
+    opacity: 0.1;
+  }
+  43% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  46% {
+    opacity: 0.8;
+  }
+}
+@keyframes mrcglow {
+  40% {
+    opacity: 0.8;
+  }
+  42% {
+    opacity: 0.1;
+  }
+  43% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  46% {
+    opacity: 0.8;
+  }
+}
